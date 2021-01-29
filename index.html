@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+    <script src="https://kit.fontawesome.com/8711ee02d6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="grid">
+
+
+            <form class="left-side" autocomplete="off">
+                <div class="money-wrapper flex-c">
+                    <div class="symbol"><i class="fas fas-w fa-dollar-sign"></i></div>
+                    <div class="input">
+                        <input id="input" type="text" placeholder="How much?">
+                    </div>
+                    <i class="fas numpad fa-calculator"></i>
+                    <!-- <i class="fas repeatBtn fa-redo-alt hidden"></i> -->
+                </div>
+
+
+                <div class="people-wrapper flex-c">
+
+                    <i data-people="1" class="fas fa-user people"></i>
+                    <i data-people="2" class="fas fa-user-friends people"></i>
+                    <i data-people="3" class="fas fa-users people fas-active"></i>
+                    <div class="group ">
+                        <i class="fas fas-s fa-user-plus people-plus"></i>
+                        <i class="fas fas-s fa-user-minus people-minus"></i>
+                    </div>
+                    <div class="number-people flex-c">3</div>
+                </div>
+
+                <div class="quality">
+                    <div class="emoji-container flex-c">
+                        <i data-tip="20" class="emoji fas fa-laugh-beam"></i>
+                        <div class="tip">20%</div>
+                    </div>
+                    <div class="emoji-container flex-c">
+                        <i data-tip="15" class=" emoji fas fa-smile-wink fas-active"></i>
+                        <div class="tip tip-active">15%</div>
+                    </div>
+                    <div class="emoji-container flex-c">
+                        <i data-tip="10" class="emoji fas fa-meh"></i>
+                        <div class="tip">10%</div>
+                    </div>
+                    <div class="emoji-container flex-c">
+                        <i data-tip="7.5" class="emoji fas fa-frown-open"></i>
+                        <div class="tip">7.5%</div>
+                    </div>
+                    <div class="emoji-container flex-c">
+                        <i data-tip="5" class="emoji fas fa-tired"></i>
+                        <div class="tip">5%</div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="right-side">
+
+                <div class="button-box flex-c">
+                    <button><i class="fas fas-p fa-search-dollar"></i></button>
+                    <div class="circle" style="animation-delay: 0s"></div>
+                    <div class="circle" style="animation-delay: 1s"></div>
+                    <div class="circle" style="animation-delay: 2s"></div>
+                    <div class="circle" style="animation-delay: 3s"></div>
+                </div>
+
+                <div class="result hidden">
+
+                    <div class="total-container small-grid">
+                        <div class="total-wrapper flex-c flex-column">
+                            <i class="up fas fas-b fa-file-invoice-dollar"></i>
+                            <div class="total under">Total</div>
+                        </div>
+                        <div class="total-result flex-c result-page">200$</div>
+                    </div>
+
+                    <div class="tip-container small-grid">
+                        <div class="tip-wrapper flex-c flex-column">
+                            <i class="up fas fas-b fa-donate"></i>
+                            <div class="under">Tip</div>
+                        </div>
+                        <div class="tip-result flex-c result-page">100$</div>
+                    </div>
+
+                    <div class="each-container small-grid">
+                        <div class="each-wrapper flex-c flex-column">
+                            <i class="up fas fas-b fa-hand-holding-usd"></i>
+                            <div class="each under">Each</div>
+                        </div>
+                        <div class="each-result flex-c result-page">10$</div>
+                    </div>
+
+                </div>
+
+                <div class="calculator nonselect hidden"> 
+                    <div class="num nonselect flex-c">7</div>
+                    <div class="num nonselect flex-c">8</div>
+                    <div class="num nonselect flex-c">9</div>
+
+                    <div class="num nonselect flex-c">4</div>
+                    <div class="num nonselect flex-c">5</div>
+                    <div class="num nonselect flex-c">6</div>
+
+                    <div class="num nonselect flex-c">1</div>
+                    <div class="num nonselect flex-c">2</div>
+                    <div class="num nonselect flex-c">3</div>
+
+                    <div class="num nonselect flex-c">c</div>
+                    <div class="num nonselect flex-c">0</div>
+                    <div class="num nonselect flex-c">.</div>
+                </div>
+                
+            </div>
+        </div>
+
+    
+        <!-- <div class="modal">
+            <div class="modal-overlay">
+                <div class="modal-window">
+                    <i class="fas fa-dollar-sign"></i>
+                    <i class="fas fa-euro-sign"></i>
+                    <i class="fas fa-pound-sign"></i>
+                    <i class="fas fa-ruble-sign"></i>
+                    <i class="fas fa-yen-sign"></i>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
